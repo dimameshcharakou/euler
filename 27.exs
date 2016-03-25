@@ -5,7 +5,6 @@ defmodule Problem27 do
   end
   def find(999, _a, _acc, p), do: IO.puts(p)
   def find(b, a, acc, p) do
-    IO.puts(b)
     if simple(b) do
       x = calculate_primary(b, a)
       if x > acc do
